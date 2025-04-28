@@ -4,10 +4,14 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Guitar myGuitar = new Guitar("Fender", "Stratocaster", 6, true);
-        myGuitar.play();
-        System.out.println(myGuitar);
-    }
+        Guitarra myGuitar = new Guitarra("01020304", "fender", "telecaster", "elétrica", "mogno", 1500.00);
 
+        System.out.println(myGuitar.getNumeroSerie());
+        System.out.println(myGuitar.getFabricante());
+        System.out.println(myGuitar.getModelo());
+        System.out.println(myGuitar.getTipo());
+        System.out.println(myGuitar.getMadeira());
+        System.out.println(myGuitar.getPreco());
+    }
 
 }
